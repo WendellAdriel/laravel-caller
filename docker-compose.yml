@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  app:
+    image: wendelladriel/laravel-caller
+    container_name: laravel-caller
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    volumes:
+      - .:/usr/src/app

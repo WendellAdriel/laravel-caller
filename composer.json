@@ -1,0 +1,40 @@
+{
+    "name": "wendelladriel/laravel-caller",
+    "description": "Create HTTP Clients for external services easily",
+    "type": "library",
+    "keywords": ["laravel", "repository", "http", "client", "requests"],
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "WendellAdriel\\LaravelCaller\\": "src/"
+        }
+    },
+    "support": {
+        "issues": "https://github.com/WendellAdriel/laravel-caller/issues",
+        "source": "https://github.com/WendellAdriel/laravel-caller"
+    },
+    "authors": [
+        {
+            "name": "Wendell Adriel",
+            "email": "wendelladriel.ti@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^8.0"
+    },
+    "require-dev": {
+        "illuminate/http": "^7.0|^8.0|^9.0",
+        "illuminate/support": "^7.0|^8.0|^9.0",
+        "laravel/pint": "^1.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "WendellAdriel\\LaravelCaller\\LaravelCallerServiceProvider"
+            ],
+            "aliases": {
+                "LaravelCaller": "WendellAdriel\\LaravelCaller\\Facades\\LaravelCaller"
+            }
+        }
+    }
+}
